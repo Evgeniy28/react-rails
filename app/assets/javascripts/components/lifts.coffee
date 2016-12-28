@@ -1,4 +1,8 @@
 @Lifts = React.createClass
+  getInitialState: ->
+    lifts: @props.data
+  getDefaultProps: ->
+    lifts: []
   render: ->
     React.DOM.div
       className: 'lifts'
